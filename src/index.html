@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>To do lista</title>
-</head>
-<body>
-    <h1>To Do List</h1>
-    <form id="todoForm">
-        <input id="todoInput">
-        <button type="button" onclick="todoList()">Click Me</button>
-    </form>
-    <ol id="todoList">
-    </ol>
-    <script src="/src/js/main.js"></script>
-</body>
+	<head>
+        <meta charset="UTF-8">
+		<title>To do list</title>
+	</head>
+	<body>
+		<h1>To Do List Application</h1>
+		<form>
+			<input type="text" id="todoInput">
+			<button id="createTodoItemButton" onclick="createTodoList()">Add Item</button>
+		</form>
+
+		<ul id="todoList"></ul>
+
+		<script type="text/javascript" src="/src/main.js"></script>
+	</body>
 </html>
