@@ -1,7 +1,8 @@
-function createTodoList () {
-    var item = document.getElementById("todoInput").value;
-    newItem.appendChiild(item);
+function createTodoList() {
+    var text = document.getElementById("todoInput").value;
     var newItem = document.createElement("li");
-    newItem.appendChild(text);
-    document.getElementById("createTodoList").addEventListener("click", createTodoList);
+    newItem.innerHTML = text;
+    document.getElementById("todoList").appendChild(newItem);
 }
+
+document.getElementById("createTodoItemButton").addEventListener("click", createTodoList);
